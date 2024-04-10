@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Party List</title>
+  <!-- Add any necessary CSS or other meta tags -->
+</head>
+<body>
+  <h1>Party List</h1>
+
+  <div id="partyList"></div>
+
+  <!-- Link the external JavaScript file with defer attribute -->
+  <script src="PartyPlanner.js"></script>
+
+  <form id="addPartyForm">
+    <h2>Add Party</h2>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+    <div>
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+    </div>
+    <div>
+      <button type="submit">Add Party</button>
+    </div>
+  </form>
+</body>
+</html>
